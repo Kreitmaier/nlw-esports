@@ -3,6 +3,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/02743c789c.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
         
         <meta charset="UTF-8">
@@ -19,6 +20,13 @@
         </header>
 
         <main>
+            <div id="modal-games" class="modal">
+                <div class="modal-content">
+                    <span class="btn-close fa-solid fa-xmark"></span>
+                    <p>Este aqui é o meu modal</p>
+                </div>
+            </div>
+
             <section>
                 <div>
                     <h2>Meus Jogos</h2>
@@ -47,6 +55,9 @@
                             href="https://www.twitch.tv/directory/game/Dota%202">
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/29595-285x380.jpg" alt="Imagem do jogo Dota2" />
                             </a>
+                        </li>
+                        <li>
+                            <button id="btn-add-games" class="btn-add fa-solid fa-plus"></button>
                         </li>
                     </ul>
                 </div>
@@ -80,6 +91,9 @@
                             href="https://www.twitch.tv/yoda">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a1489408-be7a-42b8-b823-962d1e0f0a6a-profile_image-150x150.png" alt="Imagem do canal do Yoda" />
                             </a>
+                        </li>
+                        <li>
+                            <button class="btn-add fa-solid fa-plus"></button>
                         </li>
                     </ul>
                 </div>
@@ -139,6 +153,7 @@
                 </div>
             </section>
         </main>
-        
+
+        <script src="./scripts.js"></script>
     </body>
 </html>
