@@ -22,20 +22,37 @@
         <main>
             <div id="modal-games" class="modal">
                 <div class="modal-content">
-                    <p class="btn-close fa-solid fa-xmark"></p>
+                    <p class="btn-close fa-solid fa-xmark" onclick="closeModalGames()"></p>
 
-                    <form class="form-game">
+                    
                         <h2>Inserir novo jogo</h2>
 
                         <label for="img-game">Imagem do jogo </label>
                         <input type="text" id="img-game"  name="img-game" />
     
                         <label for="link-game">Link para o jogo </label>
-                        <input type="text" id="link-game"  name="link-game" />
+                        <input type="text" id="link-game" name="link-game" />
 
-                        <input type="submit" value="Adicionar">
-                    </form>
-                
+                        <input type="submit" onclick="addGame()" value="Adicionar">
+                    
+                </div>
+            </div>
+
+            <div id="modal-channel" class="modal">
+                <div class="modal-content">
+                    <p class="btn-close fa-solid fa-xmark" onclick="closeModalChannel()"></p>
+
+                    
+                        <h2>Inserir channel</h2>
+
+                        <label for="img-channel">Imagem channel </label>
+                        <input type="text" id="img-channel"  name="img-channel" />
+    
+                        <label for="link-channel">Link para o channel </label>
+                        <input type="text" id="link-channel" name="link-channel" />
+
+                        <input type="submit" onclick="addChannel()" value="Adicionar">
+                    
                 </div>
             </div>
 
@@ -69,7 +86,7 @@
                             </a>
                         </li>
                         <li>
-                            <button id="btn-add-games" class="btn-add fa-solid fa-plus"></button>
+                            <button id="btn-add-games" onclick="addGameList()" class="btn-add fa-solid fa-plus"></button>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +122,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn-add fa-solid fa-plus"></button>
+                            <button class="btn-add fa-solid fa-plus" onclick="addChannelList()"></button>
                         </li>
                     </ul>
                 </div>
